@@ -1,5 +1,7 @@
 
-# Welcome to your CDK Python project!
+# Welcome to myiot CDK Python project!
+
+*[Getting Started](./INSTRUCTIONS.md)*
 
 This is a blank project for Python development with CDK.
 
