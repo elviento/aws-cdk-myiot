@@ -9,7 +9,7 @@ logger.setLevel(logging.INFO)
 
 client: botostubs.IoT = boto3.client('iot') # type: botostubs.IOT
 
-# iot policy doc with greengrass support
+# iot policy doc
 policyDocument = {
     'Version': '2012-10-17',
     'Statement': [
@@ -24,45 +24,6 @@ policyDocument = {
             'Resource': '*'
         }
     ]
-}
-
-# iot thing greengrass core
-core_policyDocument = {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "iot:Publish",
-        "iot:Subscribe",
-        "iot:Connect",
-        "iot:Receive"
-      ],
-      "Resource": [
-        "*"
-      ]
-    },
-    {
-      "Effect": "Allow",
-      "Action": [
-        "iot:GetThingShadow",
-        "iot:UpdateThingShadow",
-        "iot:DeleteThingShadow"
-      ],
-      "Resource": [
-        "*"
-      ]
-    },
-    {
-      "Effect": "Allow",
-      "Action": [
-        "greengrass:*"
-      ],
-      "Resource": [
-        "*"
-      ]
-    }
-  ]
 }
 
 
