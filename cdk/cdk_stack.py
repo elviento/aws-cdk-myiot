@@ -1,6 +1,5 @@
 from aws_cdk import (
     aws_iot as iot,
-    aws_s3 as s3,
     core
 )
 import boto3, botostubs

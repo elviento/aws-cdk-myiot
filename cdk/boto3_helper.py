@@ -1,6 +1,4 @@
-
 import sys
-import cfnresponse
 import boto3, botostubs
 from botocore.exceptions import ClientError
 import json
