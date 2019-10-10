@@ -2,7 +2,6 @@ from aws_cdk import (
     aws_iot as iot,
     core
 )
-import boto3, botostubs
 import boto3_helper
 
 class CdkStack(core.Stack):
